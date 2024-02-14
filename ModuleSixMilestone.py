@@ -34,13 +34,13 @@ def main():
 
     while True:
         print('\nYou are in the', current_room)
-        command = input('Enter your move (North, South, East, West) or "exit" to end the game:\n').capitalize()
+        command = input('\nEnter your move (North, South, East, West) or "exit" to end the game: \n').capitalize()
         print()
 
         if command == 'Exit':
-            print('Exiting the game. Thanks for playing!')
             print("Are you sure you want exist the game ?")
-            if input(">").lower().startswith("yes"):
+            if input("\n>").lower().startswith("yes"):
+                print('Exiting the game. Thanks for playing!')
                 exit()
             else:
                 main()
