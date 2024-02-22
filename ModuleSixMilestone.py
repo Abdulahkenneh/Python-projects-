@@ -40,7 +40,7 @@ def move_to_room(current_room, direction):
 
 def main():
     items = {
-    'Great Hall': "ghost",
+    'Great Hall': "",
     "Foyer":"key",
     "Living Room":"candlestick",
    "Altic":"Matchbox",
@@ -91,11 +91,11 @@ def main():
                          else:
                              print("Sorry I dont understand that ")
                          
-                elif items[current_room] =="ghost":
+                elif current_room =="ghost":
                     print("Im sorry you have lost the game !!") 
                     break           
                 else:
-                    print(list)
+                    print("Inventories: ",list)
            
         else:
              print('Invalid command. Please try again.')
